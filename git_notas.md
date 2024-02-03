@@ -60,4 +60,3 @@ En la primera fila se muetra el indentificador del commit, para regresar los cam
 > ***NOTA:*** *despues de un commit, al momento de realizar un cambio el status del archivo cambiara a `M` que significa modificado, si quieres hacer un commit del archivo modificado primero tendras que annadir nuevamente el archivo al area temponal con `git add <Nombre_del_Archivo>` y luego realizar el commit con `git commit - m "Mensaje"`*
 ---
 > Para ver todos los commit puser usar el comando `git log --oneline`
-
