@@ -48,4 +48,16 @@ El status `A` quiere decir que el archivo esta en seguimiento, pero al hacer cua
 
 Una vez todos los archivos esten en en seguimientos y su status sea `A` se puede annadir estos cambios a un registro temporal llamado commit, para realizar un commit se utiliza el comando `git commit -m "Mensaje"`, al commit se annadira todos los archivos en seguimiento.
 
+Para regresar los cambios del archivo alo registrado en un commit primero necesitamos saber su identificador, para ellos usamos el comando `git log --oneline` para ver los detalles de cada commit, esto retorna los siguiente:
+
+```Bash
+a5bd56b (HEAD -> master) Segundo Commit
+b11b1ae Primer Commit
+```
+
+En la primera fila se muetra el indentificador del commit, para regresar los cambios a un commit anterior usamos el comando `git reset --hard <Identificador>`.
+
 > ***NOTA:*** *despues de un commit, al momento de realizar un cambio el status del archivo cambiara a `M` que significa modificado, si quieres hacer un commit del archivo modificado primero tendras que annadir nuevamente el archivo al area temponal con `git add <Nombre_del_Archivo>` y luego realizar el commit con `git commit - m "Mensaje"`*
+---
+> Para ver todos los commit puser usar el comando `git log --oneline`
+
