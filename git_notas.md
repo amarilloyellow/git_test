@@ -1,0 +1,47 @@
+# Notas Git
+
+## Para ver la version de git
+
+`git version`
+
+## Para el nombre de usuario de la cuenta git
+
+`git config --global user.name "mi nombre"`
+
+Para agregar tu correo electronico
+
+`git config --global user.email "myemail@example.com"`
+
+Para mostrarlos en la terminal
+
+```Bash
+git config user.name
+git config user.email
+```
+
+## Obtener ayuda para los comandos
+
+`git help`
+
+## Craer un nuevos repositorio
+
+Para crear un nuevo repositorio se utiliza el comando `git init`, este comando se utiliza solo una vez por proyecto y genera los siguientes cambios:
+
+- Inicia un nuevo repositorio.
+- crea la carpeta `.git/` la cual contendra todos los commit del proyecto.
+
+### Primeros pasos al crear un repo
+
+Despues de realizar un `git init` puedes ver el status de los archivos del proyecto usando el comando `git status -s`, el ouput fue el siguiente:
+
+```Bash
+?? <Nombre_del_Archivo>
+```
+
+El `??` al lado del nombre del archivo el el estatus actual, este estado quiere decir que el archivo no tiene seguimiento, por lo tanto hay que anadir el archivo a revision usando el comando `git add <Nombre_del_Archivo>`, al hacer esto el output va a ser el siguiente:
+
+```Bash
+A  <Nombre_del_Archivo>
+```
+
+El status `A` quiere decir que el archivo esta en seguimiento, pero al hacer cualquier modificacion al archivo el status cambia a `M`.
