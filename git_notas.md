@@ -44,4 +44,8 @@ El `??` al lado del nombre del archivo el el estatus actual, este estado quiere 
 A  <Nombre_del_Archivo>
 ```
 
-El status `A` quiere decir que el archivo esta en seguimiento, pero al hacer cualquier modificacion al archivo el status cambia a `M`.
+El status `A` quiere decir que el archivo esta en seguimiento, pero al hacer cualquier modificacion al archivo el status cambia a `AM`, eso quiere decir que el archivo esta en sequimiento pero se ha modificado, para solucionar esto se tiene que volver a ejecutar el comando `git add <Nombre_del_Archivo>`
+
+Una vez todos los archivos esten en en seguimientos y su status sea `A` se puede annadir estos cambios a un registro temporal llamado commit, para realizar un commit se utiliza el comando `git commit -m "Mensaje"`, al commit se annadira todos los archivos en seguimiento.
+
+> ***NOTA:*** *despues de un commit, al momento de realizar un cambio el status del archivo cambiara a `M` que significa modificado, si quieres hacer un commit del archivo modificado primero tendras que annadir nuevamente el archivo al area temponal con `git add <Nombre_del_Archivo>` y luego realizar el commit con `git commit - m "Mensaje"`*
