@@ -71,3 +71,10 @@ Ya sabemos que con `git push` podemos enviar todos nuestro archivos a un reposit
 
 ## TAGs
 
+Los **TAGs** son etiquetas que se pueden ulizar para indentificar las versiones de nuestro proyecto. Podemos definir etiquetas de la siguente forma:
+
+```Bash
+git tag <nombre_de_la_version> -m "Mensaje"
+```
+
+Se recomienda colocar o hacer referencia a la version dentro del mensaje.
