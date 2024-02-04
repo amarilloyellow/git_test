@@ -61,10 +61,13 @@ En la primera fila se muetra el indentificador del commit, para regresar los cam
 ---
 > Para ver todos los commit puser usar el comando `git log --oneline`
 
-## Ultimos pasos con GITHUB
+### Ultimos pasos con GITHUB
 
 Ya sabemos que con `git push` podemos enviar todos nuestro archivos a un repositorio en la nube, pero que pasa si en vez de enviar los cambios a la nube, necesitamos traer los documentos que tenemos en github pero no en nuestro proyecto, para eso existen dos comandos:
 
 - **El Comando `git pull`**: Este comando traer todos los cambios y archivos que estan solo en github a nuestro proyecto.
 
 - **El Comando `git fetch`**: Este comando compara ambos repositorios y los deja a la par.
+
+## TAGs
+
