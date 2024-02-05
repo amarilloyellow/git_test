@@ -95,3 +95,8 @@ git branch <nombre_de_la_rama>
 
 > Este comando solo crea una nueva rama, para movernos a la rama recien creada usamos el comando `git checkout <nombre_de_la_rama>` y para ver las ramas creadas y donde se esta pocicionado usamos el comando `git branch`.
 
+Para unir ramas mediante una interseccion, nos ubicamos en la rama principal y utilizamos el siguiente comando:
+
+```Bash
+git merge <nombre_de_la_rama>
+```
