@@ -84,3 +84,14 @@ Para subir los TAGs a github se utiliza el comando que se muestra a continuacion
 ```Bash
 git push --tags
 ```
+
+## Git Branch o Ramas
+
+Las rama son nuevas lineas de tiempo que se generan en algun punto de la rama principal (`main o master`), esto permite al desaarrollar trabajar de forma distinta apartir del mismo proyecto, para crear una nueva rama se utiliza el siguiente comando:
+
+```Bash
+git branch <nombre_de_la_rama>
+```
+
+> Este comando solo crea una nueva rama, para movernos a la rama recien creada usamos el comando `git checkout <nombre_de_la_rama>` y para ver las ramas creadas y donde se esta pocicionado usamos el comando `git branch`.
+
