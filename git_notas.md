@@ -78,3 +78,9 @@ git tag <nombre_de_la_version> -m "Mensaje"
 ```
 
 Se recomienda colocar o hacer referencia a la version dentro del mensaje.
+
+Para subir los TAGs a github se utiliza el comando que se muestra a continuacion:
+
+```Bash
+git push --tags
+```
