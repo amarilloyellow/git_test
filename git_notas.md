@@ -100,3 +100,7 @@ Para unir ramas mediante una interseccion, nos ubicamos en la rama principal y u
 ```Bash
 git merge <nombre_de_la_rama>
 ```
+
+Una vez realizada la union podemmos eliminar una rama usando el siguiente comando `git branch -d <nombre_de_la_rama>`
+
+> ***Observacion***: Las ramas se pueden usar para tener distintos flujos de trabajo para luego unir la rama mas eficaz a la rama principal.
